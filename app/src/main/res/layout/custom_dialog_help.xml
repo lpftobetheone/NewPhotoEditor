@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg">
+
+    <RelativeLayout style="@style/FragmentTop">
+
+        <TextView
+            style="@style/TopTitleTextView"
+            android:gravity="center"
+            android:text="@string/title_help_top" />
+
+        <ImageButton
+            android:id="@+id/button_help_close"
+            style="@style/TopRightImageButton"
+            android:src="@mipmap/button_ok" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/ic_help" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="@string/title_help_bottom"
+        android:textSize="@dimen/font_large" />
+
+</RelativeLayout>

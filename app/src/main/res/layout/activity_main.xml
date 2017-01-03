@@ -1,0 +1,138 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/main_root_view"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/ad_banner">
+
+            <include
+                android:id="@+id/main_top"
+                layout="@layout/include_activity_main_top"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/top_bar_height" />
+
+            <RelativeLayout
+                android:id="@+id/main_work_view"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/main_menu_view"
+                android:layout_below="@+id/main_top" />
+
+            <include
+                android:id="@+id/main_menu_view"
+                layout="@layout/include_activity_main_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/ad_banner"
+            layout="@layout/include_activity_main_ad_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <include
+            android:id="@+id/main_pop_menu"
+            layout="@layout/include_activity_main_pop_menu"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/main_drag_border_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_primary"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/add_image"
+            android:visibility="invisible" />
+
+
+        <ImageView
+            android:id="@+id/main_drag_shadow_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/black70"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/main_drag_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/main_root_view"
+            android:background="@android:color/transparent" />
+
+        <include
+            android:id="@+id/gallery_menu_view"
+            layout="@layout/include_activity_main_gallery_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gallery_bottom_height"
+            android:layout_alignBottom="@+id/main_root_view"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/gallery_animation_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/fullscreen_mask_view"
+        layout="@layout/include_activity_main_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/fullscreen_load_view"
+        layout="@layout/include_activity_main_load"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/fullscreen_load_ad_view"
+        layout="@layout/include_activity_main_load_ad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/main_more_app_view"
+        layout="@layout/include_main_more_app"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+    <include
+        android:id="@+id/drawer"
+        layout="@layout/include_activity_main_drawer"
+        android:layout_width="304dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start" />
+
+</android.support.v4.widget.DrawerLayout>

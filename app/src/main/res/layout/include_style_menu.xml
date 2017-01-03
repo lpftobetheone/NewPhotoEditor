@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FragmentBottom"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/style_menu_shape_button"
+        style="@style/BottomImageButton"
+        android:src="@drawable/selector_style_shape_button" />
+
+    <ImageButton
+        android:id="@+id/style_menu_bg_button"
+        style="@style/BottomImageButton"
+        android:src="@drawable/selector_style_pattern_button" />
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null">
+
+        <ImageButton
+            android:id="@+id/style_menu_frame_button"
+            style="@style/BottomImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selector_style_frame_button" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@mipmap/ic_christmas_new" />
+    </RelativeLayout>
+
+
+    <ImageButton
+        android:id="@+id/style_menu_ratio_button"
+        style="@style/BottomImageButton"
+        android:src="@drawable/selector_style_ratio_button" />
+
+</LinearLayout>

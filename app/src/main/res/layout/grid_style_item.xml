@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="66.7dp"
+    android:layout_height="66.7dp"
+    android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/grid_item_image_button"
+            style="@style/GridStyleItemImageButton" />
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_primary_dark">
+
+    <include
+        android:id="@+id/grid_top"
+        layout="@layout/include_grid_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/grid_bottom"
+        android:layout_below="@+id/grid_top"
+        android:background="@color/main_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingBottom="0dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/grid_normal_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone"
+                android:layout_above="@+id/grid_normal_page_indicator" />
+
+            <GridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnWidth="80dp"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="40dp"
+                android:scrollbarFadeDuration="10"
+                android:horizontalSpacing="40dp"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
+                />
+
+            <include
+                android:id="@+id/grid_normal_ad_mask"
+                layout="@layout/include_grid_ad_mask"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/grid_normal_page_indicator"
+                android:visibility="invisible" />
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/grid_normal_page_indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:paddingBottom="20dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/grid_fancy_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/grid_fancy_page_indicator" />
+
+            <include
+                android:id="@+id/grid_fancy_ad_mask"
+                layout="@layout/include_grid_ad_mask"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/grid_fancy_page_indicator"
+                android:visibility="invisible" />
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/grid_fancy_page_indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/grid_bottom"
+        layout="@layout/include_grid_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+</RelativeLayout>

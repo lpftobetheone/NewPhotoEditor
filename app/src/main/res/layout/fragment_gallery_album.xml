@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/galleryLayoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+
+    <RelativeLayout
+        android:id="@+id/gallery_album_top"
+        style="@style/FragmentTop">
+
+        <TextView
+            style="@style/TopTitleTextView"
+            android:text="@string/title_gallery_album_top" />
+
+        <ImageButton
+            android:id="@+id/gallery_album_top_button_back"
+            style="@style/TopLeftImageButton"
+            android:src="@mipmap/button_back" />
+
+        <ImageButton
+            android:id="@+id/gallery_album_top_button_clear"
+            style="@style/TopImageButton"
+            android:layout_toLeftOf="@+id/gallery_album_top_button_ok"
+            android:layout_toStartOf="@+id/gallery_album_top_button_ok"
+            android:src="@mipmap/button_clear" />
+
+        <ImageButton
+            android:id="@+id/gallery_album_top_button_ok"
+            style="@style/TopRightImageButton"
+            android:src="@mipmap/button_ok" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/gallery_album_list_view"
+        style="@style/NormalListView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/gallery_album_bottom_placeholder"
+        android:layout_below="@+id/gallery_album_top" />
+
+    <LinearLayout
+        android:id="@+id/gallery_album_bottom_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gallery_bottom_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" />
+
+</RelativeLayout>

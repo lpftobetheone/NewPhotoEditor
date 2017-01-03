@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">LiteCollage</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="title_load">Lite Collage</string>
+
+    <!-- Main activity -->
+    <string name="title_main_top">Tap to add photo</string>
+    <string name="title_drawer_photoeditor">Get Photo Editor Pro</string>
+    <string name="title_drawer_instasquare">Get InstaSquare</string>
+    <string name="title_drawer_help">Help</string>
+    <string name="title_drawer_rate">Like Lite Collage?</string>
+
+    <string name="title_help_top">Help</string>
+    <string name="title_help_bottom">Do you know you can touch and move the border?</string>
+
+    <!-- Grid -->
+    <string name="title_grid_menu_top">Grid</string>
+    <string name="title_grid_top">Tap one frame grid to start</string>
+    <string name="title_grid_photo_editor">Edit single photo</string>
+    <string name="title_grid_selfie_camera">Selfie camera</string>
+    <string name="title_grid_photo_editor_ad">Photo Editor Pro</string>
+
+    <!-- Sticker -->
+    <string name="title_sticker_top">Sticker</string>
+
+    <!-- Text -->
+    <string name="title_text_top">Text</string>
+
+    <!-- Style -->
+    <string name="title_style_top">Style</string>
+
+    <!-- Gallery -->
+    <string name="title_gallery_top">Gallery</string>
+    <string name="title_gallery_album_top">Album</string>
+
+    <!-- PhotoEditor result -->
+    <string name="title_editor_result_top">Saved!&#160;&#160;Want to share? </string>
+    <string name="title_editor_share_content">A powerful photo editor with many amazing effects and filters!</string>
+    <string name="title_editor_download_button">Install</string>
+    <string name="title_editor_collage_button">Photo Collage</string>
+    <string name="title_editor_photo_editor_button">Photo Editor Pro</string>
+    <string name="title_editor_share_button">Share</string>
+
+    <!-- Toast -->
+    <string name="toast_too_many_images">You have selected too many images~!</string>
+    <string name="unlock_message">Watch a video ad to get permanent access to these grids</string>
+    <string name="title_ok">OK</string>
+
+    <!-- Toolbar -->
+    <string name="grid">Grid</string>
+    <string name="setting">Setting</string>
+    <string name="bg">BG</string>
+    <string name="frame">Frame</string>
+    <string name="ratio">Ratio</string>
+    <string name="text">Text</string>
+    <string name="sticker">Stickers</string>
+
+    <!-- Popup -->
+    <string name="edit">EDIT</string>
+    <string name="replace">REPLACE</string>
+    <string name="delete">DELETE</string>
+    <string name="cancel">CANCEL</string>
+
+    <!-- Custom Dialog -->
+    <string name="dialog_title_photocollage">Do you like LiteCollage? Please give us a 5-star rating!</string>
+    <string name="dialog_title_instasquare">No-Crop insta square photo editor, fullsize photo without cropping for Instagram.</string>
+
+
+    <!-- Share -->
+
+    <string name="share_dialog_title">Share with friends</string>
+    <string name="share_successfully">Share Success</string>
+    <string name="share_cancelled">Sharing is canceled</string>
+    <string name="share_failed">Share failure</string>
+    <string name="share_title">I made a great photo by PhotoCollage!</string>
+    <string name="share_content">Make your photo now! \n Android https://play.google.com/store/apps/details?id=net.zenjoy.litecollage</string>
+    <string name="share_messenger">Messenger</string>
+    <string name="share_facebook">Facebook</string>
+    <string name="share_twitter">Twitter</string>
+    <string name="share_whatsapp">WhatsApp</string>
+    <string name="share_instagram">Instagram</string>
+    <string name="share_google_plus">Google+</string>
+    <string name="share_others">Others</string>
+    <string name="share_with">Share with</string>
+    <string name="share_title_sharing">Sharing&#8230;</string>
+    <string name="share_image_not_found">Image not found. Please try another one.</string>
+
+
+
+    <!-- Rating -->
+    <string name="settings_rate_app">Rate %1$s</string>
+    <string name="settings_rate_description">If you enjoy using %1$s, please take a moment to rate it. Thanks for your support!</string>
+    <string name="settings_rate_app_common">5-Star Rating</string>
+    <string name="settings_rate_description_common">If you like the app, can you give us a 5-star rating and help us improve? Thank you!</string>
+    <string name="settings_rate_remind_me_later">Remind me later</string>
+    <string name="settings_rate_no_thanks">No, thanks</string>
+    <string name="settings_rate">Rate</string>
+    <string name="settings_rate_cancel">Later</string>
+
+    <!-- more -->
+    <string name="title_more_app_top">More apps from us</string>
+    <string name="more">More</string>
+
+    <string name="facebook_app_id">890206004420389</string>
+    <string name="facebook_app_name">LiteCollage</string>
+
+    <string name="ad_banner_id">ca-app-pub-9414288950296780/8927843559</string>
+    <string name="ad_banner_inter_a_id">ca-app-pub-9414288950296780/9692471558</string>
+    <string name="ad_banner_inter_b_id">ca-app-pub-9414288950296780/2169204751</string>
+    <string name="ad_banner_inter_c_id">ca-app-pub-9414288950296780/3645937952</string>
+    <string name="ad_banner_inter_d_id">ca-app-pub-9414288950296780/5122671154</string>
+    <string name="ad_banner_inter_e_id">ca-app-pub-9414288950296780/6599404356</string>
+</resources>

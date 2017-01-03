@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:clickable="true" >
+
+    <ImageView
+        android:id="@+id/item_preview_holder"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:background="@anim/button_highlight_item_preview"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:id="@+id/item_preview_image_view"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="13dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/item_preview_delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/button_item_delete"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/StyleMenuLinearLayout">
+
+    <!--<LinearLayout style="@style/SeekBarLinearLayout">-->
+
+        <!--<ImageView-->
+            <!--style="@style/SeekBarSiderImage"-->
+            <!--android:src="@mipmap/slider_margin" />-->
+
+        <!--<SeekBar-->
+            <!--android:id="@+id/style_seek_bar_margin"-->
+            <!--style="@style/NormalSeekBar" />-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout style="@style/SeekBarLinearLayout">
+
+        <ImageView
+            style="@style/SeekBarSiderImage"
+            android:src="@mipmap/slider_spacing" />
+
+        <SeekBar
+            android:id="@+id/style_seek_bar_border"
+            style="@style/NormalSeekBar" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/SeekBarLinearLayout" android:visibility="gone">
+
+        <ImageView
+            style="@style/SeekBarSiderImage"
+            android:src="@mipmap/slider_shadow" />
+
+        <SeekBar
+            android:id="@+id/style_seek_bar_shadow"
+            style="@style/NormalSeekBar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/style_shape_corner_view"
+        style="@style/SeekBarLinearLayout">
+
+        <ImageView
+            style="@style/SeekBarSiderImage"
+            android:src="@mipmap/slider_corner" />
+
+        <SeekBar
+            android:id="@+id/style_seek_bar_corner"
+            style="@style/NormalSeekBar" />
+    </LinearLayout>
+
+</LinearLayout>

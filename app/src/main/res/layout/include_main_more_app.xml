@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/FragmentTop">
+
+        <ImageButton
+            android:id="@+id/main_more_app_back_button"
+            android:onClick="onMoreBack"
+            style="@style/TopLeftImageButton"
+            android:src="@mipmap/button_back" />
+
+        <TextView
+            style="@style/TopTitleTextView"
+            android:layout_toEndOf="@+id/main_more_app_back_button"
+            android:layout_toRightOf="@+id/main_more_app_back_button"
+            android:text="@string/title_more_app_top" />
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/main_more_app_list_view"
+        style="@style/NormalListView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:divider="#e0e0e0"
+        android:minHeight="80dp">
+
+    </ListView>
+
+</LinearLayout>

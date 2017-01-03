@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_top_bar"
+    android:clickable="true"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/text_menu_type_button"
+        style="@style/TextImageButton"
+        android:src="@mipmap/text_type_button" />
+
+    <ImageButton
+        android:id="@+id/text_menu_font_button"
+        style="@style/TextImageButton"
+        android:src="@mipmap/text_font_button" />
+
+    <ImageButton
+        android:id="@+id/text_menu_color_button"
+        style="@style/TextImageButton"
+        android:src="@mipmap/text_color_button" />
+
+    <ImageButton
+        android:id="@+id/text_menu_shadow_button"
+        style="@style/TextImageButton"
+        android:src="@mipmap/text_shadow_button" />
+
+    <ImageButton
+        android:id="@+id/text_menu_bg_button"
+        style="@style/TextImageButton"
+        android:src="@mipmap/text_ground_button" />
+
+</LinearLayout>

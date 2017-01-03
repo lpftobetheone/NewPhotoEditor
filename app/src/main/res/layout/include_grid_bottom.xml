@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:layout_gravity="center"
+    android:background="@color/color_primary_dark"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        style="@style/MainBottomItemLayout"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/grid_photo_editor_button"
+            style="@style/EditorResultImageButton"
+            android:src="@anim/button_photo_editor" />
+
+        <TextView
+            style="@style/BaseBottomTextView"
+            android:text="@string/title_gallery_top" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/MainBottomItemLayout"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:onClick="onButtonLock"
+            style="@style/EditorResultImageButton"
+            android:src="@anim/button_more" />
+
+        <ImageButton
+            android:id="@+id/grid_selfie_camera_button"
+            style="@style/EditorResultImageButton"
+            android:visibility="gone"
+            android:src="@anim/button_selfie_camera" />
+
+        <TextView
+            style="@style/BaseBottomTextView"
+            android:text="@string/more" />
+    </LinearLayout>
+
+</LinearLayout>

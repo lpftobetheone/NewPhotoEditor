@@ -1,0 +1,13 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FragmentTop" >
+
+    <TextView
+        style="@style/TopTitleTextView"
+        android:text="@string/title_grid_menu_top" />
+
+    <ImageButton
+        android:id="@+id/style_top_button_ok"
+        style="@style/TopRightImageButton"
+        android:src="@mipmap/button_ok" />
+
+</RelativeLayout>

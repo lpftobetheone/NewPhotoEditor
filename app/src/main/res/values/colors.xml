@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF424242</color>
+
+
+    <color name="color_title">#FFCCCC00</color>
+    <color name="main_bg">#FF212121</color>
+    <color name="color_main_bg">#FFF9F4EE</color>
+    <color name="color_drawer_bg">#FFFFFFFF</color>
+    <color name="color_bar_divider_horizontal">#FFC4C4C4</color>
+    <color name="color_drawer_bar_divider">#FFE5E5E5</color>
+    <color name="color_title_editor_share_content">#FF333333</color>
+    <color name="color_title_editor_share_button_bg">#FFB3C833</color>
+    <color name="color_top_bar">#ff363636</color>
+    <color name="color_bottom_bar">#FFFFFFFF</color>
+    <color name="color_page_indicator_fill_color">#FFFFC81F</color>
+    <color name="color_page_indicator_color">#FFFFFFFF</color>
+    <color name="color_font_button">#FF404040</color>
+    <color name="color_text_color">#D9000000</color>
+    <color name="color_gird_item_bg">#FFD5D5D5</color>
+    <color name="color_gallery_bg">#FFF9F4EE</color>
+    <color name="color_primary">#ff363636</color>
+    <color name="color_primary_dark">#FF363636</color>
+    <color name="list_view_bg">#FFFFFFFF</color>
+    <color name="list_view_divider">#7FFFFFFF</color>
+    <color name="color_title_dialog_share_content">#FF000000</color>
+    <color name="color_title_green_share_button_bg">#FFB3C833</color>
+    <color name="color_title_gray_share_button_bg">#FFEFEFEF</color>
+    <color name="white15">#26FFFFFF</color>
+    <color name="black70">#B3000000</color>
+    <color name="black90">#E6000000</color>
+    <color name="more_app_install_button_bg">#FF64BF16</color>
+
+    <color name="color_ad_mask">#99444444</color>
+    <color name="share_divider">#FFCCCCCC</color>
+    <color name="bottom_pressed">#FFF50157</color>
+    <color name="popup_pressed">#1A212121</color>
+    <color name="gallery_select_count">#FFFFC81F</color>
+    <color name="gallery_select_holder">#FFF50157</color>
+</resources>

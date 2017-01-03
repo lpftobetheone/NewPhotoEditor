@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingBottom="20dp" >
+
+    <ImageView
+        android:id="@+id/dialog_top_image_view"
+        style="@style/DialogTopImageView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_lock" />
+
+    <LinearLayout style="@style/DialogMainLinearLayout" >
+
+        <TextView
+            style="@style/DialogMainContentTextView"
+            android:text="@string/unlock_message" />
+
+        <Button
+            android:id="@+id/dialog_ok_button"
+            style="@style/DialogDownloadButton"
+            android:text="@string/title_ok" />
+    </LinearLayout>
+
+</RelativeLayout>

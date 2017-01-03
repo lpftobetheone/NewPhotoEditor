@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <include
+        android:id="@+id/sticker_top"
+        layout="@layout/include_sticker_top" />
+
+    <HorizontalScrollView
+        android:id="@+id/sticker_group_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-5dp"
+        android:background="@drawable/toolbar_second_menu_black">
+
+        <LinearLayout
+            android:id="@+id/sticker_group_scroll_container_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/sticker_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sticker_group_scroll_view"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/toolbar_second_menu_black">
+
+        <LinearLayout
+            android:id="@+id/sticker_scroll_container_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <include
+        android:id="@+id/sticker_ad_mask_view"
+        layout="@layout/include_sticker_ad_mask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sticker_scroll_view"
+        android:layout_alignTop="@+id/sticker_scroll_view"
+        android:clickable="true"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/sticker_scroll_view"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sticker_top"
+        android:layout_marginEnd="@dimen/padding_normal"
+        android:layout_marginRight="@dimen/padding_normal"
+        android:orientation="vertical">
+
+        <com.langki.photocollage.classes.VerticalSeekBar
+            android:id="@+id/sticker_opacity_seek_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding_vvlarge"
+            android:layout_weight="5"
+            android:max="100"
+            android:maxHeight="2dp"
+            android:minHeight="2dp"
+            android:progress="100"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:thumb="@mipmap/ic_seek_thumb"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/sticker_opacity_button"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/selector_opacity_button" />
+    </LinearLayout>
+
+</RelativeLayout>

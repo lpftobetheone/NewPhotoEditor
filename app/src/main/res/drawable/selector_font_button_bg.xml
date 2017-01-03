@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/button_font_on" android:state_pressed="true" />
+    <!-- pressed -->
+    <item android:drawable="@mipmap/button_font_on" android:state_selected="true" />
+    <!-- focused -->
+    <item android:drawable="@mipmap/button_font" />
+    <!-- default -->
+
+</selector>

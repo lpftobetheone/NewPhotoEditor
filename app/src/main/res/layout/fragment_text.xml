@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <include
+        android:id="@+id/text_top"
+        layout="@layout/include_text_top" />
+
+    <RelativeLayout
+        android:id="@+id/text_main_view"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/text_divider_view"
+        android:layout_below="@+id/text_top"
+        android:background="@android:color/black">
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/text_divider_view"
+        layout="@layout/include_bar_divider_horizontal"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/text_menu_view" />
+
+    <include
+        android:id="@+id/text_menu_view"
+        layout="@layout/include_text_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_menu_content_view" />
+
+    <RelativeLayout
+        android:id="@+id/text_menu_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_top_bar">
+
+        <include
+            android:id="@+id/text_menu_font_view"
+            layout="@layout/include_text_menu_font" />
+
+        <include
+            android:id="@+id/text_menu_color_view"
+            layout="@layout/include_text_menu_color"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/text_menu_shadow_view"
+            layout="@layout/include_text_menu_shadow"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/text_menu_bg_view"
+            layout="@layout/include_text_menu_bg"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

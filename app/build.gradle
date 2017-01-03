@@ -1,0 +1,102 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+    defaultConfig {
+        applicationId "net.zenjoy.photoeditor"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+        manifestPlaceholders = [appPackageName: "${applicationId}"]
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+        jumboMode true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("buildtool/photocollage2.keystore")
+            storePassword "thePass001"
+            keyAlias "photocollage2"
+            keyPassword "thePass001"
+        }
+
+        debug {
+            storeFile file("buildtool/photocollage2.keystore")
+            storePassword "thePass001"
+            keyAlias "photocollage2"
+            keyPassword "thePass001"
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+        }
+
+        release {
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+
+            signingConfig signingConfigs.release
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+//    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+//        exclude group: 'com.android.support', module: 'support-annotations'
+//    })
+    compile 'com.android.support:appcompat-v7:23.1.0'
+//    testCompile 'junit:junit:4.12'
+    compile 'com.adobe.creativesdk.foundation:auth:0.9.1186'
+    compile 'com.adobe.creativesdk:image:4.8.3'
+    compile 'com.localytics.android:library:3.8.0'
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.5@aar') {
+        transitive = true;
+    }
+    compile 'com.android.support:support-annotations:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.google.firebase:firebase-ads:9.4.0'
+    compile 'com.google.android.gms:play-services-analytics:9.4.0'
+    compile 'com.google.android.gms:play-services-vision:9.4.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.facebook.android:facebook-android-sdk:4.7.0'
+    compile 'com.github.fengdai:alertdialogpro-theme-material:0.2.4'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
+    compile 'com.viewpagerindicator:library:2.4.1@aar'
+
+    compile 'com.supersonic.sdk:mediationsdk:6.3.2@jar'
+    compile 'com.supersonic.adapters:adcolonyadapter:1.1.5@jar'
+    compile 'com.supersonic.adapters:applovinadapter:1.1.5@jar'
+
+    compile 'com.flurry.android:analytics:6.3.1'
+}

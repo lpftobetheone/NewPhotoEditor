@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:background="@android:color/transparent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <include
+        android:id="@+id/style_top"
+        layout="@layout/include_style_top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/style_divider_view"
+        android:layout_below="@+id/style_top"
+        android:background="@android:color/transparent">
+
+        <include
+            android:id="@+id/style_shape_menu_view"
+            layout="@layout/include_style_menu_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <include
+            android:id="@+id/style_bg_menu_view"
+            layout="@layout/include_style_menu_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/style_frame_menu_view"
+            layout="@layout/include_style_menu_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/style_ratio_menu_view"
+            layout="@layout/include_style_menu_ratio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/style_divider_view"
+        layout="@layout/include_bar_divider_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bar_divider_height"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true" />
+
+    <include
+        android:id="@+id/style_menu_view"
+        layout="@layout/include_style_menu"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

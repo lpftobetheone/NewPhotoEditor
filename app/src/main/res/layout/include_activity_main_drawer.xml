@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_drawer_bg"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_drawer_top" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_drawer_photoeditor"
+        style="@style/MainDrawerLinearLayout" >
+
+        <ImageView
+            style="@style/MainDrawerImageView"
+            android:src="@mipmap/ic_drawer_photoeditor" />
+
+        <TextView
+            style="@style/MainDrawerTextView"
+            android:text="@string/title_drawer_photoeditor" />
+    </LinearLayout>
+
+    <include layout="@layout/include_activity_main_drawer_divider" />
+    
+    <LinearLayout
+        android:id="@+id/linear_layout_drawer_instasquare"
+        style="@style/MainDrawerLinearLayout" >
+
+        <ImageView
+            style="@style/MainDrawerImageView"
+            android:src="@mipmap/ic_drawer_instasquare" />
+
+        <TextView
+            style="@style/MainDrawerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_drawer_instasquare" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/ic_drawer_new" />
+    </LinearLayout>
+
+    <include layout="@layout/include_activity_main_drawer_divider" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_drawer_help"
+        style="@style/MainDrawerLinearLayout" >
+
+        <ImageView
+            style="@style/MainDrawerImageView"
+            android:src="@mipmap/ic_drawer_help" />
+
+        <TextView
+            style="@style/MainDrawerTextView"
+            android:text="@string/title_drawer_help" />
+    </LinearLayout>
+
+    <include layout="@layout/include_activity_main_drawer_divider" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_drawer_rate"
+        style="@style/MainDrawerLinearLayout" >
+
+        <ImageView
+            style="@style/MainDrawerImageView"
+            android:src="@mipmap/ic_drawer_rate" />
+
+        <TextView
+            style="@style/MainDrawerTextView"
+            android:text="@string/title_drawer_rate" />
+    </LinearLayout>
+
+    <include layout="@layout/include_activity_main_drawer_divider" />
+
+</LinearLayout>

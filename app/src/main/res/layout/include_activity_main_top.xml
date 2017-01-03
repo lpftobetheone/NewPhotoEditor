@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FragmentTop">
+
+    <ImageButton
+        android:id="@+id/edit_top_button_back"
+        style="@style/TopLeftImageButton"
+        android:onClick="onEditTopBack"
+        android:src="@mipmap/button_back" />
+
+    <TextView
+        android:id="@+id/main_top_text_view"
+        style="@style/TopTitleTextView"
+        android:text="@string/title_main_top" />
+
+    <ImageButton
+        android:id="@+id/main_top_gift_button"
+        style="@style/TopRightImageButton"
+        android:onClick="onButtonGift"
+        android:src="@mipmap/filtercamera" />
+
+    <LinearLayout
+        android:id="@+id/main_top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|end"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="@anim/button_highlight"
+            android:onClick="onButtonRandom"
+            android:src="@mipmap/button_random" />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="#9affffff"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="@anim/button_highlight"
+            android:onClick="onButtonGridClear"
+            android:src="@mipmap/button_clear" />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="#9affffff"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="@anim/button_highlight"
+            android:onClick="onButtonSave"
+            android:src="@mipmap/button_save" />
+    </LinearLayout>
+
+</RelativeLayout>

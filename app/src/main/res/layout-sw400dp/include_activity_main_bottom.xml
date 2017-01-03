@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="56dp"
+    android:background="@color/color_top_bar"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        style="@style/LargeScreenScrollBottomLinearLayout"
+        android:onClick="onButtonGridLite">
+
+        <ImageView
+            style="@style/ScrollBottomImage"
+            android:src="@mipmap/button_menu_grid" />
+
+        <TextView
+            style="@style/ScrollBottomTextView"
+            android:text="@string/grid" />
+    </LinearLayout>
+
+    <ImageButton
+        style="@style/ScrollBottomImage"
+        android:src="@drawable/selector_style_button"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/style_menu_shape_button"
+        style="@style/LargeScreenScrollBottomLinearLayout"
+        android:onClick="onButtonShape">
+
+        <ImageView
+            style="@style/ScrollBottomImage"
+            android:src="@mipmap/style_shape_button" />
+
+        <TextView
+            style="@style/ScrollBottomTextView"
+            android:text="@string/setting" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/style_menu_bg_button"
+        style="@style/LargeScreenScrollBottomLinearLayout"
+        android:onClick="onButtonBg">
+
+        <ImageView
+            style="@style/ScrollBottomImage"
+            android:src="@mipmap/style_pattern_button" />
+
+        <TextView
+            style="@style/ScrollBottomTextView"
+            android:text="@string/bg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/style_menu_frame_button"
+        style="@style/LargeScreenScrollBottomLinearLayout"
+        android:onClick="onButtonFrame">
+
+        <ImageView
+            style="@style/ScrollBottomImage"
+            android:src="@mipmap/style_frame_button" />
+
+        <TextView
+            style="@style/ScrollBottomTextView"
+            android:text="@string/frame" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/style_menu_ratio_button"
+        style="@style/LargeScreenScrollBottomLinearLayout"
+        android:onClick="onButtonRatio">
+
+        <ImageView
+            style="@style/ScrollBottomImage"
+            android:src="@mipmap/style_ratio_button" />
+
+        <TextView
+            style="@style/ScrollBottomTextView"
+            android:text="@string/ratio" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LargeScreenScrollBottomLinearLayout"
+        android:onClick="onButtonText">
+
+        <ImageView
+            style="@style/ScrollBottomImage"
+            android:src="@mipmap/button_menu_text" />
+
+        <TextView
+            style="@style/ScrollBottomTextView"
+            android:text="@string/text" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LargeScreenScrollBottomLinearLayout"
+        android:onClick="onButtonSticker">
+
+        <ImageView
+            style="@style/ScrollBottomImage"
+            android:src="@mipmap/button_menu_sticker" />
+
+        <TextView
+            style="@style/ScrollBottomTextView"
+            android:text="@string/sticker" />
+    </LinearLayout>
+
+</LinearLayout>
